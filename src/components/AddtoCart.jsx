@@ -8,9 +8,10 @@ const AddtoCart = () => {
 
     useEffect(()=>{
         axios
-        .get('/public/test.json')
+        .get('./public/test.json')
         .then((data)=>setUsers(data.data))
     })
+    console.log(users)
     const AddtoCart=(user)=>{
         const existingeuser=cart.find((item)=>item.name===user.name);
         
@@ -95,3 +96,4 @@ const AddtoCart = () => {
 };
 
 export default AddtoCart;
+
