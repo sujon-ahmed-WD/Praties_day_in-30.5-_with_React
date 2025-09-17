@@ -8,7 +8,7 @@ const AddtoCart = () => {
 
     useEffect(()=>{
         axios
-        .get('./public/test.json')
+        .get('/test.json')
         .then((data)=>setUsers(data.data))
     })
     console.log(users)
@@ -96,4 +96,5 @@ const AddtoCart = () => {
 };
 
 export default AddtoCart;
+
 
